@@ -13,7 +13,7 @@ const readDataFromFile = () => {
 };
 
 // Route pour rechercher des animes par titre
-app.get('/search', (req, res) => {
+app.get('/', (req, res) => {
     const title = req.query.title;
     if (!title) {
         return res.status(400).send('Le paramètre "title" est requis');
