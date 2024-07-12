@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Fonction pour lire le fichier JSON
 const readDataFromFile = () => {
-    const data = fs.readFileSync('../anime-offline-database.json');
+    const data = fs.readFileSync('anime-offline-database.json');
     return JSON.parse(data);
 };
 
