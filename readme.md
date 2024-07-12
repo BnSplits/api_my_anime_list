@@ -1,4 +1,3 @@
-```
 # Anime Search API
 
 Cette API Node.js permet de rechercher des informations sur des animes à partir d'un fichier JSON externe hébergé sur GitHub. Elle utilise Express pour gérer les requêtes HTTP et Axios pour récupérer les données JSON.
