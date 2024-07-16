@@ -15,8 +15,8 @@ const readDataFromFile = async () => {
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // Route pour rechercher des animes par titre
-app.get('/s', async (req, res) => {
-    const title = req.query.title;
+app.get('/:title', async (req, res) => {
+    const title = req.params.title;
     if (!title) {
         return res.status(400).send('Le paramètre "title" est requis');
     }
