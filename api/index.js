@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Middleware pour analyser le corps des requêtes JSON
 app.use(express.json());
@@ -12,7 +12,7 @@ const readDataFromFile = () => {
     return JSON.parse(data);
 };
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+// app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // Route pour rechercher des animes par titre
 app.get('/s', (req, res) => {
