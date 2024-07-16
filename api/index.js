@@ -12,7 +12,7 @@ const readDataFromFile = () => {
     return JSON.parse(data);
 };
 
-// app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // Route pour rechercher des animes par titre
 app.get('/s', (req, res) => {
